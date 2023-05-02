@@ -9,7 +9,7 @@ SECRET_KEY = os.getenv('SECRET_KEY',
                                 '+u7(!b--g%v6kpd_wtj-l#$')
                        )
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['62.84.126.195']
 
