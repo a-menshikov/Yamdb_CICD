@@ -59,8 +59,8 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker compose stop
-            sudo docker compose rm web
+            sudo docker compose down
+            sudo docker rmi ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
             rm .env
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
