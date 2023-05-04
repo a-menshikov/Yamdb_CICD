@@ -9,7 +9,7 @@ SECRET_KEY = os.getenv('SECRET_KEY',
                                 '+u7(!b--g%v6kpd_wtj-l#$')
                        )
 
-DEBUG = os.getenv('DEBUG', default=False)
+DEBUG = os.getenv('DEBUG', default=False) == 'True'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default=['*'])
 
